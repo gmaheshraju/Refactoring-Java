@@ -1,5 +1,6 @@
 package com.refactor.encapsulateCollection;
 public class Order {
+	
 	private String orderID;
 	private String customerName;
 	private int value;
@@ -21,5 +22,10 @@ public class Order {
 	}
 	public void setCustomerName(String customerName) {
 		this.customerName = customerName;
+	}
+	
+	@Override
+	public String toString() {
+		return "Order [orderID=" + orderID + ", customerName=" + customerName + ", value=" + value + "]";
 	}
 }
